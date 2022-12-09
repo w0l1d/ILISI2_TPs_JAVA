@@ -1,4 +1,4 @@
-package com.java.ilisi.TPX2;
+package com.java.ilisi.TP2bis;
 
 import java.util.Iterator;
 import java.util.Scanner;
@@ -35,10 +35,10 @@ public class Hotel {
     }
 
     public Iterator<Chambre> getByCategorie(int cat) {
-        return chambres.stream().filter(chambre -> chambre.getCategorie() == cat).iterator();
+        return chambres.stream().filter(chambre -> chambre.categorie() == cat).iterator();
     }
 
     public void sortByCapaciteAsc() {
-        chambres.sort((o1, o2) -> o1.getCapacite() - o2.getCapacite());
+        chambres.sort((o1, o2) -> o1.capacite() - o2.capacite());
     }
 }

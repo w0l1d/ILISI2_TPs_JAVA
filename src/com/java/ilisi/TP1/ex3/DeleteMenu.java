@@ -4,12 +4,13 @@ import java.util.InputMismatchException;
 import java.util.Vector;
 
 import static com.java.ilisi.TP1.ex3.Main.in;
+import static com.java.ilisi.TP1.ex3.MainMenu.clearScreen;
 import static com.java.ilisi.TP1.ex3.MainMenu.pressEnterToContinue;
 
 public class DeleteMenu {
     private static int printDeleteMenu() throws InputMismatchException {
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
+        clearScreen();
+
         System.out.print(
                 "\n************Menu de Suppression ************" +
                         "\n1- Supprimer ISBN" +

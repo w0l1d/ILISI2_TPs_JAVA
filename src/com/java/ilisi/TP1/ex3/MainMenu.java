@@ -9,8 +9,8 @@ import static com.java.ilisi.TP1.ex3.Main.*;
 
 public class MainMenu {
     private static int printMainMenu() throws InputMismatchException {
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
+        clearScreen();
+
         System.out.print(
                 "\n************Menu Bibliotheque************" +
                         "\n1- Lister tous les livres" +
@@ -36,7 +36,7 @@ public class MainMenu {
                 choix = printMainMenu();
                 switch (choix) {
                     case 1:
-                        System.out.println(biblio);
+                        System.out.print(biblio);
                         break;
                     case 2:
                         try {
@@ -63,7 +63,6 @@ public class MainMenu {
                         break;
 
                     case 6:
-                        System.in.read(new byte[System.in.available()]);
                         System.out.println("vouliez entrer le chemin du fichier de sauvegarde?");
                         System.out.printf("(default %s) : ", Paths.get(DEFAULT_SAVE_FILE).toAbsolutePath());
                         String f = in.nextLine();
@@ -80,8 +79,6 @@ public class MainMenu {
 
             } catch (InputMismatchException e) {
                 System.err.println("\nError: choix invalide");
-            } catch (IOException e) {
-                System.err.println(e.getMessage());
             }
             if (choix != 99)
                 pressEnterToContinue();
@@ -118,5 +115,16 @@ public class MainMenu {
             System.in.read();
         } catch (Exception ignored) {
         }
+    }
+
+    public static void clearScreen() {
+        try {
+            final String os = System.getProperty("os.name");
+            if (os.contains("Windows")) {
+                Runtime.getRuntime().exec("cls");
+            } else {
+                Runtime.getRuntime().exec("clear");
+            }
+        } catch (final Exception ignored) {}
     }
 }

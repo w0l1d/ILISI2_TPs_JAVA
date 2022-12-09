@@ -1,8 +1,6 @@
 package com.java.ilisi.TP1.ex3;
 
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.List;
 import java.util.Vector;
 import java.util.stream.Collectors;
@@ -21,7 +19,6 @@ public class Bibliotheque implements Serializable {
     }
 
     public void ajouterLivre(Livre livre) throws BiblioStureeException {
-
         if (livres.size() == maxBooks)
             throw new BiblioStureeException();
 

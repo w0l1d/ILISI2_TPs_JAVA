@@ -6,7 +6,8 @@ import java.nio.file.Paths;
 
 
 public class BibliothequeIO {
-    static final String DEFAULT_SAVE_FILE= "biblio.save";
+    static final String DEFAULT_SAVE_FILE = "biblio.save";
+
     public static void saveBibliotheque(Bibliotheque biblio, String saveFile) {
         try {
             File f = new File(saveFile);
@@ -18,16 +19,16 @@ public class BibliothequeIO {
             oos.close();
             fos.close();
         } catch (IOException e) {
-
             System.err.println("Error: suavegarde n'est pas reussi! " + e.getClass().getName());
             System.err.println(e.getMessage());
             e.printStackTrace();
         }
     }
+
     public static Bibliotheque loadBibliotheque(String saveFile) {
         Bibliotheque biblio = null;
         try {
-            FileInputStream is = new FileInputStream(saveFile==null?DEFAULT_SAVE_FILE:saveFile);
+            FileInputStream is = new FileInputStream(saveFile);
             ObjectInputStream ois = new ObjectInputStream(is);
             biblio = (Bibliotheque) ois.readObject();
             ois.close();
