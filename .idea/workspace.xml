@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b658929-33af-46a2-9fbe-c7205cbd0d5f" name="Changes" comment="init commit">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9b658929-33af-46a2-9fbe-c7205cbd0d5f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/HotelIO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/Bibliotheque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/Bibliotheque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/BibliothequeIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/BibliothequeIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/DeleteMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/DeleteMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/SearchMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/SearchMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TPX2/Chambre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Chambre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TPX2/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TPX2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Chambre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Chambre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Hotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +139,8 @@
       <workItem from="1670605072797" duration="1397000" />
       <workItem from="1670615670447" duration="61000" />
       <workItem from="1670615810122" duration="414000" />
-      <workItem from="1670616719863" duration="1062000" />
+      <workItem from="1670616719863" duration="6258000" />
+      <workItem from="1670702992282" duration="4401000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1670568289835</created>
@@ -153,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670568289835</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init commit">
+      <created>1670617810663</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670617810663</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

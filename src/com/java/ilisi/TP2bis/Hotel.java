@@ -1,18 +1,19 @@
 package com.java.ilisi.TP2bis;
 
-import java.util.Iterator;
-import java.util.Scanner;
-import java.util.Vector;
+import java.util.*;
 
 public class Hotel {
-
-
-    private final Vector<Chambre> chambres;
-    private final Scanner input;
+    private static final Scanner input = new Scanner(System.in);
+    private final List<Chambre> chambres;
     private int seqNumChambre;
+
+    public Hotel(Vector<Chambre> chambres) {
+        this.chambres = chambres;
+        seqNumChambre = chambres.stream().max(Comparator.comparingInt(Chambre::numero)).map(Chambre::numero).orElse(1);
+    }
+
     public Hotel() {
         this.chambres = new Vector<>();
-        input = new Scanner(System.in);
         seqNumChambre = 1;
     }
 
@@ -39,6 +40,6 @@ public class Hotel {
     }
 
     public void sortByCapaciteAsc() {
-        chambres.sort((o1, o2) -> o1.capacite() - o2.capacite());
+        chambres.sort(Comparator.comparingInt(Chambre::capacite));
     }
 }
