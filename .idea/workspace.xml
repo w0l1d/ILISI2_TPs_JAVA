@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b658929-33af-46a2-9fbe-c7205cbd0d5f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/HotelIO.java" afterDir="false" />
+    <list default="true" id="9b658929-33af-46a2-9fbe-c7205cbd0d5f" name="Changes" comment="hotel save and load from file (√ tested)">
+      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/ChambreEtatEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP2/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Chambre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Chambre.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Hotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/HotelIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/HotelIO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +58,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.com.java.ilisi.TP2bis.Main">
     <configuration name="EssaiTri" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.java.ilisi.TP2.EssaiTri" />
       <module name="demo_prj1" />
@@ -110,8 +112,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.java.ilisi.TP2bis.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.ilisi.TP2bis.Main" />
+      <module name="demo_prj1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.ilisi.TP2bis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.java.ilisi.TP2bis.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.com.java.ilisi.TP2.Main" />
         <item itemvalue="Application.EssaiTri" />
@@ -140,7 +156,9 @@
       <workItem from="1670615670447" duration="61000" />
       <workItem from="1670615810122" duration="414000" />
       <workItem from="1670616719863" duration="6258000" />
-      <workItem from="1670702992282" duration="4401000" />
+      <workItem from="1670702992282" duration="7479000" />
+      <workItem from="1670759268140" duration="3632000" />
+      <workItem from="1670793309895" duration="1505000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1670568289835</created>
@@ -156,11 +174,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670617810663</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="hotel save and load from file (not tested yet)">
+      <created>1670707601095</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670707601095</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -174,7 +202,14 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="hotel save and load from file (not tested yet)" />
+    <MESSAGE value="hotel save and load from file (√ tested)" />
+    <option name="LAST_COMMIT_MESSAGE" value="hotel save and load from file (√ tested)" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

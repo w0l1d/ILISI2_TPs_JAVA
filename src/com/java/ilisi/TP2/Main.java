@@ -1,15 +1,11 @@
 package com.java.ilisi.TP2;
 
-import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
 
-import java.text.DecimalFormat;
-import java.util.NoSuchElementException;
 import java.util.Scanner;
-import java.util.StringTokenizer;
 
 public class Main {
 
-    private static Scanner in = new Scanner(System.in);
+    private static final Scanner in = new Scanner(System.in);
     public static String tronque(double dbl, int dLimit) {
         String d = String.valueOf(dbl);
         int i = d.indexOf('.');

@@ -1,15 +1,18 @@
 package com.java.ilisi.TP2bis;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Hotel {
     private static final Scanner input = new Scanner(System.in);
     private final List<Chambre> chambres;
     private int seqNumChambre;
 
-    public Hotel(Vector<Chambre> chambres) {
+    public Hotel(List<Chambre> chambres) {
         this.chambres = chambres;
-        seqNumChambre = chambres.stream().max(Comparator.comparingInt(Chambre::numero)).map(Chambre::numero).orElse(1);
+        seqNumChambre = chambres.stream()
+                .max(Comparator.comparingInt(Chambre::numero))
+                .map(Chambre::numero).orElse(0) + 1;
     }
 
     public Hotel() {
@@ -37,6 +40,18 @@ public class Hotel {
 
     public Iterator<Chambre> getByCategorie(int cat) {
         return chambres.stream().filter(chambre -> chambre.categorie() == cat).iterator();
+    }
+
+    public void printByCategory(int cat) {
+        System.out.println(chambres.stream().filter(c -> c.categorie() == cat).map(Chambre::toString).collect(Collectors.joining("\n")));
+    }
+
+    @Override
+    public String toString() {
+        return "Hotel{" +
+                "chambres=" + chambres +
+                ", seqNumChambre=" + seqNumChambre +
+                '}';
     }
 
     public void sortByCapaciteAsc() {

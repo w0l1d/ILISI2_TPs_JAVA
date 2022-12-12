@@ -44,7 +44,7 @@ public class HotelIO {
                 values[4].charAt(0));
     }
 
-    public Hotel loadHotel(String filename) throws IOException {
+    public static Hotel loadHotel(String filename) throws IOException {
         return new Hotel(loadChambres(filename));
     }
 
