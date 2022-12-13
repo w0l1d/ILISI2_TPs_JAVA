@@ -4,7 +4,6 @@ import java.util.InputMismatchException;
 import java.util.Vector;
 
 import static com.java.ilisi.TP1.ex3.Main.in;
-import static com.java.ilisi.TP1.ex3.MainMenu.clearScreen;
 import static com.java.ilisi.TP1.ex3.MainMenu.pressEnterToContinue;
 
 public class SearchMenu {
@@ -54,15 +53,17 @@ public class SearchMenu {
 
 
     private static int printSearchMenu() throws InputMismatchException {
-        clearScreen();
         System.out.print(
-                "\n************ Menu de Recherche ************" +
-                        "\n1- Chercher par isbn" +
-                        "\n2- Chercher par titre" +
-                        "\n3- Chercher par auteur" +
-                        "\n3- Chercher tous les livres d'un auteur" +
-                        "\n99- Retourner" +
-                        "\n\nEntrer votre choix : "
+                """
+
+                        ************ Menu de Recherche ************
+                        1- Chercher par isbn
+                        2- Chercher par titre
+                        3- Chercher par auteur
+                        3- Chercher tous les livres d'un auteur
+                        99- Retourner
+
+                        Entrer votre choix :\s"""
         );
         int c = in.nextInt();
         in.nextLine();

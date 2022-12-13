@@ -5,22 +5,23 @@ import java.nio.file.Paths;
 import java.util.InputMismatchException;
 
 import static com.java.ilisi.TP1.ex3.BibliothequeIO.DEFAULT_SAVE_FILE;
-import static com.java.ilisi.TP1.ex3.Main.*;
+import static com.java.ilisi.TP1.ex3.Main.in;
 
 public class MainMenu {
     private static int printMainMenu() throws InputMismatchException {
-        clearScreen();
 
         System.out.print(
-                "\n************Menu Bibliotheque************" +
-                        "\n1- Lister tous les livres" +
-                        "\n2- Ajouter un livre" +
-                        "\n3- chercher un livre" +
-                        "\n4- Supprimer un livre" +
-                        "\n5- Sauvegarder la bibliotheque" +
-                        "\n6- Charger la bibiotheque depuis un fichier" +
-                        "\n99- QUITTER" +
-                        "\n\nEntrer votre choix : "
+                """
+                        ************Menu Bibliotheque************
+                        1- Lister tous les livres
+                        2- Ajouter un livre
+                        3- chercher un livre
+                        4- Supprimer un livre
+                        5- Sauvegarder la bibliotheque
+                        6- Charger la bibiotheque depuis un fichier
+                        99- QUITTER
+
+                        Entrer votre choix :\s"""
         );
         int c = in.nextInt();
         in.nextLine();
@@ -35,10 +36,8 @@ public class MainMenu {
             try {
                 choix = printMainMenu();
                 switch (choix) {
-                    case 1:
-                        System.out.print(biblio);
-                        break;
-                    case 2:
+                    case 1 -> System.out.print(biblio);
+                    case 2 -> {
                         try {
                             Livre l = saisirLivre();
                             biblio.ajouterLivre(l);
@@ -47,34 +46,23 @@ public class MainMenu {
                             System.err.println("Error: Ajout du livre est annule!");
                             System.err.println(e.getMessage());
                         }
-                        break;
-                    case 3:
-                        SearchMenu.handleSearchMenu(biblio);
-                        break;
-                    case 4:
-                        DeleteMenu.handleDeleteMenu(biblio);
-                        break;
-
-                    case 5:
+                    }
+                    case 3 -> SearchMenu.handleSearchMenu(biblio);
+                    case 4 -> DeleteMenu.handleDeleteMenu(biblio);
+                    case 5 -> {
                         System.out.println("\nvouliez entrer le chemin du fichier de sauvegarde?");
                         System.out.printf("(default %s) : ", Paths.get(DEFAULT_SAVE_FILE).toAbsolutePath());
                         String file = in.nextLine();
                         BibliothequeIO.saveBibliotheque(biblio, file.isEmpty() ? DEFAULT_SAVE_FILE : file);
-                        break;
-
-                    case 6:
+                    }
+                    case 6 -> {
                         System.out.println("vouliez entrer le chemin du fichier de sauvegarde?");
                         System.out.printf("(default %s) : ", Paths.get(DEFAULT_SAVE_FILE).toAbsolutePath());
                         String f = in.nextLine();
                         biblio = BibliothequeIO.loadBibliotheque(f.isEmpty() ? DEFAULT_SAVE_FILE : f);
-                        break;
-
-                    case 99:
-                        System.out.println("Good bye");
-                        break;
-
-                    default:
-                        System.err.println("\nError: choix invalide");
+                    }
+                    case 99 -> System.out.println("Good bye");
+                    default -> System.err.println("\nError: choix invalide");
                 }
 
             } catch (InputMismatchException e) {
@@ -117,14 +105,4 @@ public class MainMenu {
         }
     }
 
-    public static void clearScreen() {
-        try {
-            final String os = System.getProperty("os.name");
-            if (os.contains("Windows")) {
-                Runtime.getRuntime().exec("cls");
-            } else {
-                Runtime.getRuntime().exec("clear");
-            }
-        } catch (final Exception ignored) {}
-    }
 }

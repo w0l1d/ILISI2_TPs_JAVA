@@ -5,3 +5,4 @@ public class BiblioStureeException extends Exception {
         super("Bibliotheque est saturee");
     }
 }
+
