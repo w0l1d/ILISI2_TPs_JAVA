@@ -39,7 +39,9 @@ public class Hotel {
     }
 
     public Iterator<Chambre> getByCategorie(int cat) {
-        return chambres.stream().filter(chambre -> chambre.categorie() == cat).iterator();
+        return chambres.stream()
+                .filter(chambre -> chambre.categorie() == cat)
+                .iterator();
     }
 
     public void printByCategory(int cat) {

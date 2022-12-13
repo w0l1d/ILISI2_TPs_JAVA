@@ -7,4 +7,6 @@ public record Chambre(int numero, int categorie, double prix, int capacite, char
     public String toString() {
         return numero() + ";" + categorie() + ";" + prix() + ";" + capacite() + ";" + etat();
     }
+
+
 }

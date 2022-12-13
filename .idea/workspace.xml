@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b658929-33af-46a2-9fbe-c7205cbd0d5f" name="Changes" comment="hotel save and load from file (√ tested)">
-      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/ChambreEtatEnum.java" afterDir="false" />
+    <list default="true" id="9b658929-33af-46a2-9fbe-c7205cbd0d5f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP2/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Chambre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Chambre.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/HotelIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/HotelIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +154,7 @@
       <workItem from="1670616719863" duration="6258000" />
       <workItem from="1670702992282" duration="7479000" />
       <workItem from="1670759268140" duration="3632000" />
-      <workItem from="1670793309895" duration="1505000" />
+      <workItem from="1670793309895" duration="6229000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1670568289835</created>
@@ -181,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670707601095</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="hotel save and load from file (√ tested)">
+      <created>1670833491478</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670833491478</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
