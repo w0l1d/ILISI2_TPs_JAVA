@@ -5,25 +5,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b658929-33af-46a2-9fbe-c7205cbd0d5f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/BiblioStureeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/BiblioStureeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/DeleteMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/DeleteMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/SearchMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/SearchMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/Agence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/Voiture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/critere/Critere.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/critere/CritereMarque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/critere/CriterePrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/critere/InterCritere.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/enums/Civilite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/exceptions/ClientEstLoueurException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/exceptions/ClientNotLoueurException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/exceptions/VoitureEstLoueeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/exceptions/VoitureNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/location/ILocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/location/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex1/classeMorse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp1/ex1/classeMorse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex2/Somme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp1/ex2/Somme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/BiblioStureeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp1/ex3/BiblioStureeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/Bibliotheque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp1/ex3/Bibliotheque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/BibliothequeIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp1/ex3/BibliothequeIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/DeleteMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp1/ex3/DeleteMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/Livre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp1/ex3/Livre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/LivreNonTrouveException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp1/ex3/LivreNonTrouveException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp1/ex3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp1/ex3/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP1/ex3/SearchMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp1/ex3/SearchMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2/CannotDecreaseArraySize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp2/CannotDecreaseArraySize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2/EssaiTri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp2/EssaiTri.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2/TriSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp2/TriSimple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Chambre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp2bis/Chambre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/ChambreEtatEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp2bis/Hotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/HotelIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp2bis/HotelIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/TP2bis/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp2bis/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://C:/Program Files/Java/jdk-17.0.4.1/lib/src.zip!/java.base/java/util/stream/Stream.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -43,7 +83,8 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;aspect.path.notification.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;P:/Project/Java_ILISI2_Ph2/demo_prj1&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;P:/Project/Java_ILISI2_Ph2/demo_prj1/src/com/java/ilisi/tp3/critere/Critere.java&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -51,17 +92,24 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;P:/Project/Java_ILISI2_Ph2/demo_prj1/src/com/java/ilisi/tp3/critere/Critere.java&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.com.java.ilisi.TP2bis.Main">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.java.ilisi.tp3.exceptions" />
+      <recent name="com.java.ilisi.tp3.critere" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.com.java.ilisi.tp3.Main">
     <configuration name="EssaiTri" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.java.ilisi.TP2.EssaiTri" />
+      <option name="MAIN_CLASS_NAME" value="com.java.ilisi.tp2.EssaiTri" />
       <module name="demo_prj1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.java.ilisi.TP2.*" />
+          <option name="PATTERN" value="com.java.ilisi.tp2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -70,11 +118,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.java.ilisi.TP1.ex3.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.java.ilisi.tp1.ex3.Main" />
       <module name="demo_prj1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.java.ilisi.TP1.ex3.*" />
+          <option name="PATTERN" value="com.java.ilisi.tp1.ex3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,12 +131,12 @@
       </method>
     </configuration>
     <configuration name="Somme" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.java.ilisi.TP1.ex2.Somme" />
+      <option name="MAIN_CLASS_NAME" value="com.java.ilisi.tp1.ex2.Somme" />
       <module name="demo_prj1" />
       <option name="PROGRAM_PARAMETERS" value="1 2a" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.java.ilisi.TP1.ex1.*" />
+          <option name="PATTERN" value="com.java.ilisi.tp1.ex1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,12 +144,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.java.ilisi.TP2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.java.ilisi.TP2.Main" />
+    <configuration name="com.java.ilisi.tp2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.ilisi.tp2.Main" />
       <module name="demo_prj1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.java.ilisi.TP2.*" />
+          <option name="PATTERN" value="com.java.ilisi.tp2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +157,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.java.ilisi.TP2bis.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.java.ilisi.TP2bis.Main" />
+    <configuration name="com.java.ilisi.tp2bis.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.ilisi.tp2bis.Main" />
       <module name="demo_prj1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.java.ilisi.TP2bis.*" />
+          <option name="PATTERN" value="com.java.ilisi.tp2bis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.java.ilisi.tp3.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.ilisi.tp3.Main" />
+      <module name="demo_prj1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.ilisi.tp3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,9 +185,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.java.ilisi.TP2bis.Main" />
+        <item itemvalue="Application.com.java.ilisi.tp3.Main" />
+        <item itemvalue="Application.com.java.ilisi.tp2bis.Main" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.com.java.ilisi.TP2.Main" />
+        <item itemvalue="Application.com.java.ilisi.tp2.Main" />
         <item itemvalue="Application.EssaiTri" />
       </list>
     </recent_temporary>
@@ -156,7 +218,14 @@
       <workItem from="1670702992282" duration="7479000" />
       <workItem from="1670759268140" duration="3632000" />
       <workItem from="1670793309895" duration="6229000" />
-      <workItem from="1670918620003" duration="636000" />
+      <workItem from="1670918620003" duration="10346000" />
+      <workItem from="1671090415483" duration="117000" />
+      <workItem from="1671090556180" duration="43000" />
+      <workItem from="1671090624931" duration="1229000" />
+      <workItem from="1671101802567" duration="5520000" />
+      <workItem from="1671180401545" duration="2699000" />
+      <workItem from="1671221719605" duration="20452000" />
+      <workItem from="1671480382444" duration="2190000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1670568289835</created>
@@ -200,7 +269,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670918847987</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="hotel save and load from file (√ tested)&#10;&#10;enhanced menus">
+      <created>1670919293328</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670919293328</updated>
+    </task>
+    <task id="LOCAL-00008" summary="hotel save and load from file (√ tested)&#10;&#10;enhanced menus">
+      <created>1670919415517</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670919415517</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,9 +309,14 @@
     <MESSAGE value="init commit" />
     <MESSAGE value="hotel save and load from file (not tested yet)" />
     <MESSAGE value="hotel save and load from file (√ tested)" />
-    <option name="LAST_COMMIT_MESSAGE" value="hotel save and load from file (√ tested)" />
+    <MESSAGE value="hotel save and load from file (√ tested)&#10;&#10;enhanced menus" />
+    <option name="LAST_COMMIT_MESSAGE" value="hotel save and load from file (√ tested)&#10;&#10;enhanced menus" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
