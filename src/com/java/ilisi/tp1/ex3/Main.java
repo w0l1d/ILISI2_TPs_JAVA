@@ -10,7 +10,7 @@ public class Main {
     public static final Scanner in = new Scanner(System.in);
 
 
-    public static void main(String[] args) throws BiblioStureeException {
+    public static void main(String[] args) {
 
         System.out.println("vous voulez initilaise une nouvelle bibliotheque : (y/n)");
         String choix = in.nextLine();
@@ -23,7 +23,13 @@ public class Main {
             System.out.println("\nEntrer le chemin du fichier de sauvegarde:");
             System.out.printf("(default %s) : ", Paths.get(DEFAULT_SAVE_FILE).toAbsolutePath());
             String f = in.nextLine();
-            Bibliotheque biblio = BibliothequeIO.loadBibliotheque(f.isEmpty() ? DEFAULT_SAVE_FILE : f);
+            Bibliotheque biblio;
+            try {
+                biblio = BibliothequeIO.loadBibliotheque(f.isEmpty() ? DEFAULT_SAVE_FILE : f);
+            } catch (Exception ex) {
+                System.err.println("Erreur lors du chargement du bibiliotheque");
+                biblio = new Bibliotheque(50);
+            }
             MainMenu.handleMainMenu(biblio);
         }
 

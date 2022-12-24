@@ -1,9 +1,9 @@
-package tp2bis;
+package byKhaoula.tp2bis;
 
 public class Chambre {
 	
-	private int numero;
-	private int categorie;
+	private final int numero;
+	private final int categorie;
 	private Double prix ;
 	private int capacite ;
 	private char etat;

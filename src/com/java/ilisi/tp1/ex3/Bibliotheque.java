@@ -20,10 +20,8 @@ public class Bibliotheque implements Serializable {
 
     public void ajouterLivre(Livre livre) throws BiblioStureeException {
         if (livres.size() == maxBooks)
-            throw new BiblioStureeException();
-
+            throw new BiblioStureeException(capacite());
         livres.add(livre);
-
     }
 
     public int size() {

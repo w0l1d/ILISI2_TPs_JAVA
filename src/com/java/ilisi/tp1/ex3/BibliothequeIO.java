@@ -25,15 +25,17 @@ public class BibliothequeIO {
 
     public static Bibliotheque loadBibliotheque(String saveFile) {
         Bibliotheque biblio = null;
-        try {
-            FileInputStream is = new FileInputStream(saveFile);
-            ObjectInputStream ois = new ObjectInputStream(is);
-            biblio = (Bibliotheque) ois.readObject();
-            ois.close();
-            is.close();
-        } catch (IOException | ClassNotFoundException e) {
-            System.err.println("Error: suavegarde n'est pas reussi!");
+        try (var ois = new ObjectInputStream(new FileInputStream(saveFile))) {
+            Object tmp = ois.readObject();
+            if (tmp instanceof Bibliotheque)
+                biblio = (Bibliotheque) tmp;
+            else
+                throw new InvalidObjectException("Bibioltheque format est invalid!!");
+
+        } catch (Exception e) {
+            System.err.println("Error: Chargement n'est pas reussi!");
             System.err.println(e.getMessage());
+            biblio = new Bibliotheque(100);
         }
         return biblio;
     }

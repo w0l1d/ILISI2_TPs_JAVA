@@ -16,11 +16,11 @@ public class HotelIO {
         writer.close();
     }
 
-    public static Hotel loadHotel(String filename) throws IOException {
+    public static Hotel loadHotel(String filename) throws IOException, InvalidChambreFileFormat {
         return new Hotel(loadChambres(filename));
     }
 
-    private static Vector<Chambre> loadChambres(String filename) throws IOException {
+    private static Vector<Chambre> loadChambres(String filename) throws IOException, InvalidChambreFileFormat {
         Vector<Chambre> chambres = new Vector<>();
         InputStream inputStream = new FileInputStream(filename);
         try (var br = new BufferedReader(
@@ -40,14 +40,18 @@ public class HotelIO {
                 .collect(Collectors.joining("\n"));
     }
 
-    private static Chambre convertToCombre(String data) {
+    private static Chambre convertToCombre(String data) throws InvalidChambreFileFormat {
         String[] values = data.split(";");
-        return new Chambre(
-                Integer.parseInt(values[0]),
-                Integer.parseInt(values[1]),
-                Double.parseDouble(values[2]),
-                Integer.parseInt(values[3]),
-                values[4].charAt(0));
+        try {
+            return new Chambre(
+                    Integer.parseInt(values[0]),
+                    Integer.parseInt(values[1]),
+                    Double.parseDouble(values[2]),
+                    Integer.parseInt(values[3]),
+                    values[4].charAt(0));
+        } catch (Exception ex) {
+            throw new InvalidChambreFileFormat(data);
+        }
     }
 
 

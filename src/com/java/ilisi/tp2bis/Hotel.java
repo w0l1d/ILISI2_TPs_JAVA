@@ -93,7 +93,7 @@ public class Hotel {
     public void loadHotel(String filename) {
         try {
             HotelIO.loadHotel(filename);
-        } catch (IOException e) {
+        } catch (IOException | InvalidChambreFileFormat e) {
             System.err.println("Hotel could not be saved! " + e.getMessage());
 
         }

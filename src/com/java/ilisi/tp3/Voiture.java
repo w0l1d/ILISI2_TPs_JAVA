@@ -16,6 +16,11 @@ public record Voiture(String marque, String model, int annee, int prix) {
     }
 
     @Override
+    public int hashCode() {
+        return Objects.hash(marque, model, annee, prix);
+    }
+
+    @Override
     public String toString() {
         return "Voiture{" +
                 "marque='" + marque + '\'' +
@@ -23,4 +28,5 @@ public record Voiture(String marque, String model, int annee, int prix) {
                 ", prix=" + prix +
                 '}';
     }
+
 }

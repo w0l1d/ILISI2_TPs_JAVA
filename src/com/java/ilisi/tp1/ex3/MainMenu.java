@@ -38,14 +38,9 @@ public class MainMenu {
                 switch (choix) {
                     case 1 -> System.out.print(biblio);
                     case 2 -> {
-                        try {
-                            Livre l = saisirLivre();
-                            biblio.ajouterLivre(l);
-                            System.out.printf("Livre \"%s\" est bien ajoute!", l.getTitre());
-                        } catch (Exception e) {
-                            System.err.println("Error: Ajout du livre est annule!");
-                            System.err.println(e.getMessage());
-                        }
+                        Livre l = saisirLivre();
+                        biblio.ajouterLivre(l);
+                        System.out.printf("Livre \"%s\" est bien ajoute!", l.getTitre());
                     }
                     case 3 -> SearchMenu.handleSearchMenu(biblio);
                     case 4 -> DeleteMenu.handleDeleteMenu(biblio);
@@ -67,7 +62,12 @@ public class MainMenu {
 
             } catch (InputMismatchException e) {
                 System.err.println("\nError: choix invalide");
+                System.err.println(e.getMessage());
+            } catch (Exception e) {
+                System.err.println("Error: Operation est annule!");
+                System.err.println(e.getMessage());
             }
+
             if (choix != 99)
                 pressEnterToContinue();
         } while (choix != 99);

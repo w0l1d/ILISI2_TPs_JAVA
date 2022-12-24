@@ -25,6 +25,10 @@ public class Main {
                 new Voiture("Ferari", "La Ferari", 2016, 600),
                 new Voiture("Renault", "R4", 2000, 10)
         );
+
+//        Iterator<Voiture> iterator = voitures.iterator();
+//        Collections.sort(voitures, Comparator.comparing(Voiture::marque));
+
         /*
          * Q 5 . En supposant que la référence agence est de type Agence
          *        et a été initialisée, donnez la ou les lignes de code

@@ -1,13 +1,6 @@
-package tp2bis;
+package byKhaoula.tp2bis;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.RandomAccessFile;
+import java.io.*;
 import java.util.Scanner;
 import java.util.Vector;
 
@@ -33,12 +26,11 @@ public class HotelIO {
 	
 	public static Chambre extractRoom(String line) {
 		String[] data =line.split(" ");
-		Chambre chambre= new Chambre(Integer.parseInt(data[0]),
-				 					  Integer.parseInt(data[1]),
-				 					  Double.parseDouble(data[2]),
-				 					  Integer.parseInt(data[3]),
-				 					  data[4].charAt(0));
-        return chambre;
+        return new Chambre(Integer.parseInt(data[0]),
+                Integer.parseInt(data[1]),
+                Double.parseDouble(data[2]),
+                Integer.parseInt(data[3]),
+                data[4].charAt(0));
 	}
 	
 	public static void addRoomInsideFile(String file,Chambre chambre) throws IOException {
@@ -159,7 +151,7 @@ public class HotelIO {
 	 
 	 
 	public static Vector<Chambre> freeRoom(String file){
-		Vector<Chambre> freeR=new Vector<>(5);;
+		Vector<Chambre> freeR=new Vector<>(5);
 		try {
 				RandomAccessFile raf = new RandomAccessFile(new File(file), "r");
 				while(raf.getFilePointer()<raf.length()){

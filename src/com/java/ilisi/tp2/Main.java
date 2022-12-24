@@ -22,9 +22,9 @@ public class Main {
             try {
                 System.out.println(tronque(Double.parseDouble(st.nextToken()), Integer.parseInt(st.nextToken())));
             } catch (NumberFormatException e) {
-                System.err.println("Error : Format du premier double ou entier incorrect");
+                System.out.println("Error : Format du premier double ou entier incorrect");
             } catch (NoSuchElementException e) {
-                System.err.println("Error : entier n'est pas fourni");
+                System.out.println("Error : entier n'est pas fourni");
             }
         }
 
