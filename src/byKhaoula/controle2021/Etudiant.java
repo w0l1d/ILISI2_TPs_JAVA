@@ -1,9 +1,8 @@
-package controle2021;
+package byKhaoula.controle2021;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import static controle2021.Note.NoteMoyenne;
 public class Etudiant {
 
 	private final String prenom;
@@ -25,16 +24,17 @@ public class Etudiant {
 			e.printStackTrace();
 		}
 	}
-	
-	public List<Note> getNotes(){
-		List<Note> notes=new ArrayList<>();
-		for(ResultatModule it:resultats)
-			notes.add(it.getNote());
-		return notes;
-	}
-	public Note NoteMoyenne() {
-		return  Note.NoteMoyenne( getNotes());
-	}
+
+    public List<Note> getNotes() {
+        List<Note> notes = new ArrayList<>();
+        for (ResultatModule it : resultats)
+            notes.add(it.getNote());
+        return notes;
+    }
+
+    public Note NoteMoyenne() throws IlligalArgumentException {
+        return Note.NoteMoyenne(getNotes());
+    }
 
 	public void printAllModuleResult() {
 		Iterator it=resultats.iterator();
@@ -43,10 +43,10 @@ public class Etudiant {
 			System.out.println(it.next());
 		}
 	}
-	
-	public void printResultats() {
-		System.out.println("\nnom:	"+nom+ "\nprenom : "+prenom);
-		printAllModuleResult();
-		System.out.println("\nmoyen :"+NoteMoyenne());
-	}
+
+    public void printResultats() throws IlligalArgumentException {
+        System.out.println("\nnom:	" + nom + "\nprenom : " + prenom);
+        printAllModuleResult();
+        System.out.println("\nmoyen :" + NoteMoyenne());
+    }
 }

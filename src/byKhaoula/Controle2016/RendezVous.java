@@ -1,10 +1,10 @@
-package Controle2016;
+package byKhaoula.Controle2016;
 
 public class RendezVous implements Comparable<RendezVous>{
-	private String intitule;
+	private final String intitule;
 	private String date;
 	private String heureD;
-	private String heureF;
+	private final String heureF;
 	public RendezVous(String intitule, String date, String heureD, String heureF) {
 		 
 		this.intitule = intitule;

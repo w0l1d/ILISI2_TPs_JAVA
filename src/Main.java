@@ -1,16 +1,18 @@
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Vector;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Main {
+public class Main extends AbstractTest {
     static long factorial(long n) {
         if (n == 0L)
             return 1L;
         else
             return (n * factorial(n - 1));
     }
-
 
     public static long similarPairs(String[] words) {
         Arrays.stream(words).map(s -> s.chars()
@@ -25,6 +27,7 @@ public class Main {
                     System.out.println(e.getValue());
                     System.out.println();
                 });
+
 
         Arrays.stream(words).map(s -> s.chars()
                         .mapToObj(chr -> (char) chr) // autoboxed to Character
@@ -59,6 +62,17 @@ public class Main {
 //        System.out.println("Hello world! ");
 
 
+//        SortedSet<String> strings = new TreeSet<>(new Comparator<String>() {
+//            @Override
+//            public int compare(String o1, String o2) {
+//
+//                SimpleDateFormat df = new SimpleDateFormat("").parse("20h52");
+//            return 0;
+//            }
+//        });
+
+        System.out.println("1234556".substring(0, 3));
+
         Predicate<String> predicate = new Predicate<String>() {
             @Override
             public boolean test(String s) {
@@ -67,9 +81,23 @@ public class Main {
         };
 
         int count = (int) Stream.of("helll owokrd", "ejef dfd,", "erweew").filter(predicate).count();
+        Collections.sort(List.of("helll owokrd", "ejef dfd,", "erweew"));
+
+        Vector<String> v = new Vector<>();
+
+        v.add(null);
+        int[] ints = {1, 8, 9, 5, 4, 6, 0, 7};
+        System.out.println(Arrays.toString(ints));
+        Arrays.sort(ints, 0, 4);
+        System.out.println(Arrays.toString(ints));
 
 
         System.out.printf("%.1f%n", 2.5245);
+
+//
+//        String d = "20150627", h1 = "18h05", h2 = "21h00";
+//        SimpleDateFormat df = new SimpleDateFormat("YYYYMMDD HHhmm");
+//        Date dt = df.parse(d + " " + h1);
 
     }
 

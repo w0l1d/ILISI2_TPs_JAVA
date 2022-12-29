@@ -16,6 +16,12 @@ public class VerificateurJouet implements Runnable {
 
     @Override
     public void run() {
-
+        for (Jouet jouet : Simulation.lesJouets) {
+            try {
+                jouet.tuEsVerifiePar(this);
+            } catch (InterruptedException e) {
+                System.out.println(e.getMessage());
+            }
+        }
     }
 }
