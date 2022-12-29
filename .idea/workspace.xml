@@ -4,32 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b658929-33af-46a2-9fbe-c7205cbd0d5f" name="Changes" comment="completed TP3">
-      <change afterPath="$PROJECT_DIR$/src/AbstractTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/byKhaoula/Agenda.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/byKhaoula/controle2021/Note.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/byKhaoula/controle2021/Predicat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/by khaoula/Controle2016/Agenda.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/by khaoula/Controle2016/src/Controle2016/Agenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/byKhaoula/Controle2016/Agenda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/by khaoula/Controle2016/src/Controle2016/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/byKhaoula/Controle2016/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/by khaoula/Controle2016/src/Controle2016/RendezVous.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/byKhaoula/Controle2016/RendezVous.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/by khaoula/Controle2016/src/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/by khaoula/controle2021/src/controle2021/CritereNoteMinimale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/byKhaoula/controle2021/CritereNoteMinimale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/by khaoula/controle2021/src/controle2021/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/byKhaoula/controle2021/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/by khaoula/controle2021/src/controle2021/Etudiant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/byKhaoula/controle2021/Etudiant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/by khaoula/controle2021/src/controle2021/IlligalArgumentException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/byKhaoula/controle2021/IlligalArgumentException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/by khaoula/controle2021/src/controle2021/Note.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/by khaoula/controle2021/src/controle2021/Predicat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/by khaoula/controle2021/src/controle2021/Promotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/byKhaoula/controle2021/Promotion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/by khaoula/controle2021/src/controle2021/ResultatModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/byKhaoula/controle2021/ResultatModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/by khaoula/controle2021/src/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp2bis/Chambre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp2bis/Chambre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp2bis/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp2bis/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp4/part2/Jouet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp4/part2/Jouet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp4/part2/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp4/part2/Simulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp4/part2/VerificateurJouet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp4/part2/VerificateurJouet.java" afterDir="false" />
+    <list default="true" id="9b658929-33af-46a2-9fbe-c7205cbd0d5f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp4/part2/Jouet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp4/part2/Simulation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp4/part2/VerificateurJouet.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +200,7 @@
       <workItem from="1672050040213" duration="8300000" />
       <workItem from="1672301769061" duration="799000" />
       <workItem from="1672304240841" duration="3090000" />
-      <workItem from="1672350719788" duration="1156000" />
+      <workItem from="1672350719788" duration="1506000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1670568289835</created>
@@ -294,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671916682774</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="partie 1 and partie 2">
+      <created>1672352209137</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1672352209137</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,7 +307,8 @@
     <MESSAGE value="hotel save and load from file (√ tested)" />
     <MESSAGE value="hotel save and load from file (√ tested)&#10;&#10;enhanced menus" />
     <MESSAGE value="completed TP3" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed TP3" />
+    <MESSAGE value="partie 1 and partie 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="partie 1 and partie 2" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -332,7 +318,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>97</line>
+          <line>98</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
