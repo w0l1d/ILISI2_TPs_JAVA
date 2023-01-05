@@ -1,4 +1,5 @@
-package com.java.ilisi.tp4;
+package com.java.ilisi.tp4.partie3;
+
 
 public class Jouet {
     private final int num;
@@ -19,3 +20,4 @@ public class Jouet {
 
     }
 }
+
