@@ -1,4 +1,3 @@
-import com.drew.imaging.ImageProcessingException;
 
 import java.io.File;
 import java.io.IOException;
@@ -8,7 +7,7 @@ import java.util.Objects;
 public class AbstractTest {
 
 
-   public static void main(String[] args) throws IOException, ImageProcessingException {
+   public static void main(String[] args) throws IOException {
       String[] titles = new String[]{
               "(1) يتلونه حق تلاوته",
               "(2) ولله المشرق والمغرب 1",
