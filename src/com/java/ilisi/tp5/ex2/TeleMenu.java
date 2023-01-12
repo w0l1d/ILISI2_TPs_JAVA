@@ -4,7 +4,6 @@ import java.awt.*;
 
 public class TeleMenu extends MenuBar {
 
-
    public TeleMenu() {
       Menu menu = new Menu("File");
       MenuItem item = new MenuItem("Exit");
@@ -12,5 +11,4 @@ public class TeleMenu extends MenuBar {
       menu.add(item);
       add(menu);
    }
-
 }
