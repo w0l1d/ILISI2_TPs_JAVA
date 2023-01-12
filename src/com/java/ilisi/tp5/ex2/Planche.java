@@ -1,4 +1,4 @@
-package com.java.ilisi.tp5;
+package com.java.ilisi.tp5.ex2;
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;
@@ -15,7 +15,6 @@ public class Planche extends Frame {
            "Vert", Color.GREEN, "Orange", Color.ORANGE);
    Checkbox isRempliCheckBox;
    private final Dessin dessin;
-   private Choice colorCh;
    private final CheckboxGroup colorsGroup;
    private final Choice shapeCh;
 
@@ -43,7 +42,7 @@ public class Planche extends Frame {
       toolbarPanel.add(new Label("Shape choice"));
 
       shapeCh = new Choice();
-      SHAPES_LIST.forEach(s -> shapeCh.add(s));
+      SHAPES_LIST.forEach(shapeCh::add);
       shapeCh.addItemListener(e -> dessin.setShapeName(((Choice) e.getSource()).getSelectedItem()));
       toolbarPanel.add(shapeCh);
 
@@ -51,11 +50,11 @@ public class Planche extends Frame {
       toolbarPanel.add(new Label("Color choice"));
       Panel colorsPanel = new Panel(new GridLayout(COLORS_MAP.size(), 1));
       colorsGroup = new CheckboxGroup();
-      COLORS_MAP.entrySet().forEach(s -> {
-         var c = new Checkbox(s.getKey());
-         c.setBackground(s.getValue());
+      COLORS_MAP.forEach((key, value) -> {
+         var c = new Checkbox(key);
+         c.setBackground(value);
          c.setCheckboxGroup(colorsGroup);
-         c.addItemListener(e -> dessin.setColor(s.getValue()));
+         c.addItemListener(e -> dessin.setColor(value));
          colorsPanel.add(c);
       });
       toolbarPanel.add(colorsPanel);

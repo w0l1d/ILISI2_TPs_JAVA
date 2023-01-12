@@ -3,7 +3,7 @@ package com.java.ilisi.tp5.ex1;
 
 import java.applet.Applet;
 
-public class Telephone extends Applet {
+public class TelephoneApplet extends Applet {
    @Override
    public void init() {
 

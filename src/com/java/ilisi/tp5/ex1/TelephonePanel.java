@@ -2,31 +2,25 @@ package com.java.ilisi.tp5.ex1;
 
 import java.awt.*;
 import java.awt.event.ActionListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
 
-public class TelephoneFrame extends Frame {
+public class TelephonePanel extends Panel {
+   private static String AFFICHEUR_TELEPHONE = "";
    private final ClavierTelePanel clvTele;
    private final TextField txtPrinter;
-   private static String AFFICHEUR_TELEPHONE = "";
 
-   public TelephoneFrame() {
-      super("Untitled");
+   public TelephonePanel() {
+
       setLayout(new BorderLayout());
+
       txtPrinter = new TextField();
       add(txtPrinter, BorderLayout.NORTH);
       add((clvTele = new ClavierTelePanel()), BorderLayout.CENTER);
       this.setMinimumSize(new Dimension(300, 350));
-      this.addWindowListener(new WindowAdapter() {
-         @Override
-         public void windowClosing(WindowEvent e) {
-            System.exit(0);
-         }
-      });
 
       ActionListener numBtnActLstn = e -> {
-         AFFICHEUR_TELEPHONE += ((Button) e.getSource()).getLabel();
-         getTxtPrinter().setText(String.valueOf(AFFICHEUR_TELEPHONE.charAt(AFFICHEUR_TELEPHONE.length() - 1)));
+         getTxtPrinter().setText(
+                 getTxtPrinter().getText() + ((Button) e.getSource()).getLabel()
+         );
       };
 
       for (int i = 0; i < 10;
@@ -35,11 +29,13 @@ public class TelephoneFrame extends Frame {
                    .addActionListener(numBtnActLstn))
          ;
 
-      getClvTele().getBtnReset().addActionListener(e -> getTxtPrinter().setText((AFFICHEUR_TELEPHONE = "")));
+      getClvTele().getBtnReset().addActionListener(e -> {
+         AFFICHEUR_TELEPHONE = getTxtPrinter().getText();
+         getTxtPrinter().setText("");
+      });
       getClvTele().getBtnBis().addActionListener(e -> getTxtPrinter().setText(AFFICHEUR_TELEPHONE));
 
 
-      setVisible(true);
    }
 
    public ClavierTelePanel getClvTele() {
