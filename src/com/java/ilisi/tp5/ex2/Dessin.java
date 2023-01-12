@@ -84,6 +84,17 @@ public class Dessin extends Canvas {
             if ((!isRempli)) g.drawRoundRect(x, y, w, h, 4, 4);
             else g.fillRoundRect(x, y, w, h, 4, 4);
          }
+         case "3D Rectangle" -> {
+            if ((!isRempli)) g.draw3DRect(x, y, w, h, isRempli);
+            else g.fill3DRect(x, y, w, h, isRempli);
+         }
+//         case "Round Rectangle" -> {
+//            if ((!isRempli)) g.drawRoundRect(x, y, w, h, 4, 4);
+//            else g.fillRoundRect(x, y, w, h, 4, 4);
+//         }
+         case "Line" -> {
+            g.drawLine(startPoint.x, startPoint.y, endPoint.x, endPoint.y);
+         }
       }
 
    }

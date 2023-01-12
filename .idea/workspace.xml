@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b658929-33af-46a2-9fbe-c7205cbd0d5f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/demo_prj1.eml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo_prj1.userlibraries" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp5/ex1/TeleMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp5/ex2/TeleMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp5/Dessin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp5/ex2/Dessin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp5/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp5/ex2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp5/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp5/Pair.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp5/Planche.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp5/ex2/Planche.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp5/ex1/Telephone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp5/ex1/TelephoneApplet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp5/ex1/TelephoneFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp5/ex1/TelephonePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp5/ex2/Dessin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp5/ex2/Dessin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp5/ex2/Planche.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp5/ex2/Planche.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +106,7 @@
       <recent name="com.java.ilisi.tp3.critere" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TeleMain">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Dessin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.java.ilisi.tp5.test.Dessin" />
       <module name="demo_prj1" />
@@ -197,8 +188,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TeleMain" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.TeleMain" />
         <item itemvalue="Application.Dessin" />
         <item itemvalue="Application.Simulation" />
         <item itemvalue="Application.Telephone" />
@@ -255,7 +246,7 @@
       <workItem from="1673176677331" duration="501000" />
       <workItem from="1673339357065" duration="15206000" />
       <workItem from="1673463866784" duration="683000" />
-      <workItem from="1673510511867" duration="2516000" />
+      <workItem from="1673510511867" duration="3442000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1670568289835</created>
@@ -369,7 +360,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673463938897</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="TP5 : modify telephone bis button behavior">
+      <created>1673519788356</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1673519788356</updated>
+    </task>
+    <task id="LOCAL-00018" summary="TP5 : modify telephone bis button behavior">
+      <created>1673519859868</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1673519859868</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +420,8 @@
     <MESSAGE value="partie 3 only !!" />
     <MESSAGE value="TP 4 to partie 4 &#10;debut de TP5" />
     <MESSAGE value="TP 4 :  partie 4 avec verified (integer, boolean) &#10; TP5" />
-    <option name="LAST_COMMIT_MESSAGE" value="TP 4 :  partie 4 avec verified (integer, boolean) &#10; TP5" />
+    <MESSAGE value="TP5 : modify telephone bis button behavior" />
+    <option name="LAST_COMMIT_MESSAGE" value="TP5 : modify telephone bis button behavior" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

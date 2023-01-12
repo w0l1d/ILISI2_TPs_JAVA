@@ -9,7 +9,7 @@ import java.util.Map;
 public class Planche extends Frame {
 
    public static final List<String> SHAPES_LIST
-           = List.of("Rectangle", "Circle", "Round Rectangle");
+           = List.of("Rectangle", "Circle", "Round Rectangle", "3D Rectangle", "Line");
    public static final Map<String, Color> COLORS_MAP = Map.of("Noir", Color.BLACK, "Rouge", Color.RED,
            "Jaune", Color.YELLOW, "Bleu", Color.BLUE,
            "Vert", Color.GREEN, "Orange", Color.ORANGE);
