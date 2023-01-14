@@ -13,18 +13,20 @@ import java.util.TreeMap;
 public class Main {
 
     public static void main(String[] args) {
+
         List<Voiture> voitures = List.of(
-                new Voiture("Renault", "Clio", 2009, 100),
-                new Voiture("Volvo", "zeta", 2016, 99),
-                new Voiture("peugeot", "partner", 2003, 90),
-                new Voiture("skoda", "alpha", 2009, 50),
-                new Voiture("rover", "gama", 2016, 20),
-                new Voiture("Mazi", "lexa", 2020, 700),
-                new Voiture("tesla", "S serie", 2022, 300),
-                new Voiture("Ford", "transite", 2006, 40),
-                new Voiture("Ferari", "La Ferari", 2016, 600),
-                new Voiture("Renault", "R4", 2000, 10)
+                new Voiture("152-أ-1233", "Renault", "Clio", 2009, 100),
+                new Voiture("152-ب-1566", "Volvo", "zeta", 2016, 99),
+                new Voiture("81234-و-12", "peugeot", "partner", 2003, 90),
+                new Voiture("123-د-154", "skoda", "alpha", 2009, 50),
+                new Voiture("785-أ-89", "rover", "gama", 2016, 20),
+                new Voiture("127-أ-999", "Mazi", "lexa", 2020, 700),
+                new Voiture("654-ب-469", "tesla", "S serie", 2022, 300),
+                new Voiture("963-د-895", "Ford", "transite", 2006, 40),
+                new Voiture("753-ط-4885", "Ferari", "La Ferari", 2016, 600),
+                new Voiture("75849-ف-9835", "Renault", "R4", 2000, 10)
         );
+
 
 //        Iterator<Voiture> iterator = voitures.iterator();
 //        Collections.sort(voitures, Comparator.comparing(Voiture::marque));
@@ -36,8 +38,9 @@ public class Main {
          *        dont le prix est inférieur à 100.
          */
         CriterePrix criterePrix = new CriterePrix(100);
-        Agence agenceHash = new Agence(HashMap::new);
+        AgenceDAO agenceHash = new AgenceDAO(HashMap::new);
         agenceHash.addVoitures(voitures);
+        new AgenceGUI(agenceHash).setVisible(true);
         System.out.println("""
                                 
                 ******************************************************
@@ -113,7 +116,7 @@ public class Main {
             // Error :voiture n'existe pas dans l'agence
             try {
                 agenceHash.loueVoiture(c3,
-                        new Voiture("unconnu", "unconnuModel",
+                        new Voiture("test", "unconnu", "unconnuModel",
                                 2000, 50));
             } catch (Exception ex) {
                 System.err.println(ex.getMessage());
@@ -140,7 +143,7 @@ public class Main {
                 """);
         {
 
-            Agence agenceTree = new Agence(TreeMap::new);
+            AgenceDAO agenceTree = new AgenceDAO(TreeMap::new);
             agenceTree.addVoitures(voitures);
 
             agenceTree.loueVoiture(c1, voitures.get(0));
@@ -162,7 +165,7 @@ public class Main {
             // Error :voiture n'existe pas dans l'agence
             try {
                 agenceTree.loueVoiture(c3,
-                        new Voiture("unconnu", "unconnuModel",
+                        new Voiture("testmat", "unconnu", "unconnuModel",
                                 2000, 50));
             } catch (Exception ex) {
                 System.err.println(ex.getMessage());

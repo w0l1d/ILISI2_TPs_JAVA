@@ -7,24 +7,25 @@ import java.util.Objects;
 public record Client(String nom, String prenom, String cin, Civilite civilite) implements Comparable<Client> {
 
     @Override
+    public int hashCode() {
+        return Objects.hash(cin);
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Client client = (Client) o;
-        return Objects.equals(nom, client.nom)
-                && Objects.equals(prenom, client.prenom)
-                && Objects.equals(cin, client.cin)
-                && civilite == client.civilite;
+        return Objects.equals(cin, client.cin);
     }
 
     @Override
     public String toString() {
-        return "Client{" +
-                "nom='" + nom + '\'' +
-                ", prenom='" + prenom + '\'' +
-                ", cin='" + cin + '\'' +
-                ", civilite=" + civilite +
-                '}';
+        return cin + ", " + prenom + ", " + nom + ", " + civilite;
+    }
+
+    public String[] toArray() {
+        return new String[]{cin, prenom, nom, civilite.toString()};
     }
 
     @Override

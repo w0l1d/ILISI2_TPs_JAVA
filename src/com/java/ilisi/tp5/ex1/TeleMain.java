@@ -1,7 +1,5 @@
 package com.java.ilisi.tp5.ex1;
 
-import com.java.ilisi.tp5.ex2.TeleMenu;
-
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;

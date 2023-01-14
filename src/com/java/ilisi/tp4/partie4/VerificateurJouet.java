@@ -21,9 +21,10 @@ public class VerificateurJouet implements Runnable {
 
     public void verifieJouet(int jouet) throws InterruptedException {
         System.out.println(name + " teste le jouet " + jouet + ", il constate qu'il doit le vérifier");
-        System.out.println(name + " commence la vérification");
+       System.out.println(name + " commence la vérification du jouet " + jouet);
 //        System.out.println("Le verificateur \"" + name + "\" verifie le jouet " + jouet);
-        Thread.sleep((int) ((Math.random() * 10000) / vitesse));
+       Thread.sleep((int) ((Math.random() * 10000) / vitesse));
+       System.out.println(name + " a fini la vérification du jouet " + jouet);
     }
 
     @Override

@@ -16,19 +16,11 @@ public class Simulation {
       verifBachir.thread.start();
       try {
          verifAhmed.thread.join();
-      } catch (InterruptedException ex) {
-         System.out.println(ex.getMessage());
-      }
-      try {
          verifAmine.thread.join();
-      } catch (InterruptedException ex) {
-         System.out.println(ex.getMessage());
-      }
-
-      try {
          verifBachir.thread.join();
       } catch (InterruptedException ex) {
          System.out.println(ex.getMessage());
       }
+
    }
 }

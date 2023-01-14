@@ -1,4 +1,4 @@
-package com.java.ilisi.tp5.ex2;
+package com.java.ilisi.tp5.ex1;
 
 import java.awt.*;
 

@@ -9,7 +9,7 @@ import java.util.Map;
 public class Planche extends Frame {
 
    public static final List<String> SHAPES_LIST
-           = List.of("Rectangle", "Circle", "Round Rectangle", "3D Rectangle", "Line");
+           = List.of("Rectangle", "Circle", "Round Rectangle", "Line");
    public static final Map<String, Color> COLORS_MAP = Map.of("Noir", Color.BLACK, "Rouge", Color.RED,
            "Jaune", Color.YELLOW, "Bleu", Color.BLUE,
            "Vert", Color.GREEN, "Orange", Color.ORANGE);
@@ -35,7 +35,7 @@ public class Planche extends Frame {
 
 
       dessin = new Dessin();
-      dessin.setMinimumSize(new Dimension(300, 250));
+      dessin.setMinimumSize(new Dimension(350, 220));
       add(dessin, BorderLayout.CENTER);
 
       Panel toolbarPanel = new Panel(new GridLayout(3, 2));
@@ -48,7 +48,7 @@ public class Planche extends Frame {
 
 
       toolbarPanel.add(new Label("Color choice"));
-      Panel colorsPanel = new Panel(new GridLayout(COLORS_MAP.size(), 1));
+      Panel colorsPanel = new Panel(new GridLayout(COLORS_MAP.size() / 3, 3));
       colorsGroup = new CheckboxGroup();
       COLORS_MAP.forEach((key, value) -> {
          var c = new Checkbox(key);
