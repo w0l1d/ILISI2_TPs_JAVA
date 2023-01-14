@@ -15,6 +15,11 @@ public record Voiture(String matricule, String marque,
                 annee, prix};
     }
 
+    public String[] toSArray() {
+        return new String[]{matricule, marque, model,
+                String.valueOf(annee), String.valueOf(prix)};
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -5,58 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b658929-33af-46a2-9fbe-c7205cbd0d5f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.metadata/.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/.org.eclipse.egit.core.cmp/.location" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.mpc.ui/dialog_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/javaLikeNames.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback/0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.1.0.20221015-0744.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.tips.ide/dialog_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.intro/dialog_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.intro/introstate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata/version.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jgoodies-forms-1.8.0-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jgoodies-forms-1.8.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miglayout-src.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miglayout15-swing.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/AgenceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/AgenceGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/AgenceLabels.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/exceptions/CarAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/ui/AddVoiturePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/ui/VoitureGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp3/Agence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/AgenceDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp3/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp3/Voiture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/Voiture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp4/partie4/VerificateurJouet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp4/partie4/VerificateurJouet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp4/partie4Int/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp4/partie4Int/Simulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp4/partie4Int/VerificateurJouet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp4/partie4Int/VerificateurJouet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp5/ex1/TeleMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp5/ex1/TeleMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp5/ex2/Dessin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp5/ex2/Dessin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp5/ex2/Planche.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp5/ex2/Planche.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp5/ex2/TeleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp5/ex1/TeleMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp3/ui/AddVoiturePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/ui/AddVoiturePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/ilisi/tp3/ui/VoitureGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/ilisi/tp3/ui/VoitureGUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,7 +252,7 @@
       <workItem from="1673339357065" duration="15206000" />
       <workItem from="1673463866784" duration="683000" />
       <workItem from="1673510511867" duration="6198000" />
-      <workItem from="1673641618843" duration="27733000" />
+      <workItem from="1673641618843" duration="28694000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1670568289835</created>
@@ -435,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673520626133</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="TP3 with swing&#10;-&gt; implement voitures managment">
+      <created>1673707080840</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1673707080841</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +441,8 @@
     <MESSAGE value="TP 4 to partie 4 &#10;debut de TP5" />
     <MESSAGE value="TP 4 :  partie 4 avec verified (integer, boolean) &#10; TP5" />
     <MESSAGE value="TP5 : modify telephone bis button behavior" />
-    <option name="LAST_COMMIT_MESSAGE" value="TP5 : modify telephone bis button behavior" />
+    <MESSAGE value="TP3 with swing&#10;-&gt; implement voitures managment" />
+    <option name="LAST_COMMIT_MESSAGE" value="TP3 with swing&#10;-&gt; implement voitures managment" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

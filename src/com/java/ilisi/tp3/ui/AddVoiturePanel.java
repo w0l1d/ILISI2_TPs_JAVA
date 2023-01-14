@@ -7,6 +7,7 @@ import javax.swing.text.DateFormatter;
 import java.awt.*;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.util.List;
 
 import static com.java.ilisi.tp3.AgenceLabels.*;
 
@@ -202,5 +203,9 @@ public class AddVoiturePanel extends JPanel {
 
    public JFormattedTextField getTxtPrix() {
       return txtPrix;
+   }
+
+   public void clearInputs() {
+      List.of(txtAnn, txtMarq, txtMod, txtMat, txtPrix).forEach(jtf -> jtf.setText(""));
    }
 }

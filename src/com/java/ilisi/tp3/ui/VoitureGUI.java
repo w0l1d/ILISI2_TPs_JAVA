@@ -44,9 +44,10 @@ public class VoitureGUI extends JSplitPane {
       carsArray = voituresImmutable.stream().map(Voiture::toArray).toList().toArray(carsArray);
 
 
-      tblVoitures = new JTable(carsArray,
+      var model = new DefaultTableModel(carsArray,
               Arrays.stream(Voiture.class.getDeclaredFields())
                       .map(Field::getName).toArray());
+      tblVoitures = new JTable(model);
       tblVoitures.setFillsViewportHeight(true);
       tblVoitures.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
       tblVoitures.setDefaultEditor(Object.class, null);
@@ -90,15 +91,18 @@ public class VoitureGUI extends JSplitPane {
          try {
             v = formCarPanel.getVoitureFromInput();
          } catch (RuntimeException ex) {
-            JOptionPane.showMessageDialog(this, ex.getMessage(), ERROR_AJOUT_CAR_TITLE, JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, ex.getMessage(),
+                    ERROR_AJOUT_CAR_TITLE, JOptionPane.ERROR_MESSAGE);
             System.err.println(ex.getMessage());
             return;
          }
          try {
             agenceDAO.addVoiture(v);
+            ((DefaultTableModel) tblVoitures.getModel()).addRow(v.toArray());
+            formCarPanel.clearInputs();
          } catch (CarAlreadyExistsException ex) {
-            JOptionPane.showMessageDialog(this,
-                    ex.getMessage(), ERROR_AJOUT_CAR_TITLE, JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, ex.getMessage(),
+                    ERROR_AJOUT_CAR_TITLE, JOptionPane.ERROR_MESSAGE);
             System.err.println(ex.getMessage());
          }
       });
@@ -115,18 +119,20 @@ public class VoitureGUI extends JSplitPane {
          }
          try {
             agenceDAO.removeVoiture(v);
+            formCarPanel.clearInputs();
+            ((DefaultTableModel) tblVoitures.getModel()).removeRow(tblVoitures.getSelectedRow());
          } catch (VoitureNotFoundException | VoitureEstLoueeException ex) {
-            JOptionPane.showMessageDialog(this,
-                    ex.getMessage(), ERROR_DELETE_CAR_TITLE, JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, ex.getMessage(),
+                    ERROR_DELETE_CAR_TITLE, JOptionPane.ERROR_MESSAGE);
             System.err.println(ex.getMessage());
          }
-         ((DefaultTableModel) tblVoitures.getModel()).removeRow(tblVoitures.getSelectedRow());
       });
 
       formCarPanel.getBtnModif().addActionListener(e -> {
          Voiture v;
          try {
             v = formCarPanel.getVoitureFromInput();
+
          } catch (RuntimeException ex) {
             JOptionPane.showMessageDialog(this, ex.getMessage(),
                     ERROR_UPDATE_CAR_TITLE, JOptionPane.ERROR_MESSAGE);
@@ -135,9 +141,11 @@ public class VoitureGUI extends JSplitPane {
          }
          try {
             agenceDAO.updateVoiture(v);
+            updateRow(tblVoitures.getSelectedRow(), v.toSArray());
+            formCarPanel.clearInputs();
          } catch (VoitureNotFoundException ex) {
-            JOptionPane.showMessageDialog(this,
-                    ex.getMessage(), ERROR_UPDATE_CAR_TITLE, JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, ex.getMessage(),
+                    ERROR_UPDATE_CAR_TITLE, JOptionPane.ERROR_MESSAGE);
             System.err.println(ex.getMessage());
          }
 
@@ -156,7 +164,7 @@ public class VoitureGUI extends JSplitPane {
       if (data.length > 5)
          throw new IllegalArgumentException("data[] is to long");
 
-      for (int j = 1; j < data.length + 1; j++)
+      for (int j = 0; j < data.length; j++)
          tblVoitures.setValueAt(data[j], rowIndex, j);
    }
 
