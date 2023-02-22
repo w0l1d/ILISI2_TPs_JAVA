@@ -1,10 +1,12 @@
-package com.java.ilisi.tp3;
+package com.java.ilisi.tp3.model;
 
 import com.java.ilisi.tp3.enums.Civilite;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public record Client(String nom, String prenom, String cin, Civilite civilite) implements Comparable<Client> {
+public record Client(String nom, String prenom, String cin,
+                     Civilite civilite) implements Comparable<Client>, Serializable {
 
     @Override
     public int hashCode() {

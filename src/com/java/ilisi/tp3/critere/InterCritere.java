@@ -1,6 +1,6 @@
 package com.java.ilisi.tp3.critere;
 
-import com.java.ilisi.tp3.Voiture;
+import com.java.ilisi.tp3.model.Voiture;
 
 import java.util.ArrayList;
 import java.util.List;

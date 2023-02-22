@@ -1,6 +1,6 @@
 package com.java.ilisi.tp3.ui;
 
-import com.java.ilisi.tp3.Voiture;
+import com.java.ilisi.tp3.model.Voiture;
 
 import javax.swing.*;
 import javax.swing.text.DateFormatter;
@@ -15,7 +15,7 @@ public class AddVoiturePanel extends JPanel {
    private final JButton btnAdd;
    private final JButton btnModif;
    private final JButton btnDel;
-   private JTextField textField;
+   private final JButton btnSrch;
    private final JFormattedTextField txtMat;
    private final JTextField txtMarq;
    private final JTextField txtAnn;
@@ -49,6 +49,12 @@ public class AddVoiturePanel extends JPanel {
       btnDel.setBackground(new Color(220, 20, 60));
       btnDel.setEnabled(false);
       panel.add(btnDel);
+
+      btnSrch = new JButton(LABEL_SEARCH);
+      btnSrch.setForeground(new Color(240, 248, 255));
+      btnSrch.setBackground(new Color(168, 165, 101));
+      btnSrch.setEnabled(true);
+      panel.add(btnSrch);
 
       JPanel panel_1 = new JPanel();
       add(panel_1, BorderLayout.CENTER);
@@ -133,7 +139,6 @@ public class AddVoiturePanel extends JPanel {
       panel_1.add(lblPrix, "1, 18");
 
       txtPrix = new JFormattedTextField();
-      txtPrix.setValue(0);
       txtPrix.setColumns(10);
       panel_1.add(txtPrix, "1, 20, fill, default");
 
@@ -181,8 +186,8 @@ public class AddVoiturePanel extends JPanel {
       return btnDel;
    }
 
-   public JTextField getTextField() {
-      return textField;
+   public JButton getBtnSrch() {
+      return btnSrch;
    }
 
    public JFormattedTextField getTxtMat() {

@@ -1,6 +1,6 @@
 package com.java.ilisi.tp3.exceptions;
 
-import com.java.ilisi.tp3.Client;
+import com.java.ilisi.tp3.model.Client;
 
 public class ClientNotLoueurException extends RuntimeException {
     public ClientNotLoueurException(Client client) {

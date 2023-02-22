@@ -1,11 +1,11 @@
 package com.java.ilisi.tp3.location;
 
-import com.java.ilisi.tp3.Client;
-import com.java.ilisi.tp3.Voiture;
 import com.java.ilisi.tp3.exceptions.ClientEstLoueurException;
 import com.java.ilisi.tp3.exceptions.ClientNotLoueurException;
 import com.java.ilisi.tp3.exceptions.VoitureEstLoueeException;
 import com.java.ilisi.tp3.exceptions.VoitureNotFoundException;
+import com.java.ilisi.tp3.model.Client;
+import com.java.ilisi.tp3.model.Voiture;
 
 import java.util.Iterator;
 import java.util.Map;
@@ -13,7 +13,7 @@ import java.util.Map;
 public abstract class Location implements ILocation {
     private Map<Client, Voiture> locations;
 
-    protected Map<Client, Voiture> getLocation() {
+    public Map<Client, Voiture> getLocation() {
         if (locations == null)
             locations = getInstanceOf();
         return locations;

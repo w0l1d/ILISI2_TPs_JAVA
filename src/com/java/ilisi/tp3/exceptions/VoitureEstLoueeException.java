@@ -1,6 +1,6 @@
 package com.java.ilisi.tp3.exceptions;
 
-import com.java.ilisi.tp3.Voiture;
+import com.java.ilisi.tp3.model.Voiture;
 
 public class VoitureEstLoueeException extends RuntimeException {
     public VoitureEstLoueeException(Voiture voiture) {

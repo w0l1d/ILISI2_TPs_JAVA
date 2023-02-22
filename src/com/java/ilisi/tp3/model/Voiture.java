@@ -1,19 +1,20 @@
-package com.java.ilisi.tp3;
+package com.java.ilisi.tp3.model;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 public record Voiture(String matricule, String marque,
-                      String model, int annee, int prix) {
+                      String model, int annee, int prix) implements Serializable {
 
-    @Override
-    public String toString() {
-        return matricule + ", " + marque + ", " + model + ", " + annee + ", " + prix;
-    }
+   @Override
+   public String toString() {
+      return matricule + ", " + marque + ", " + model + ", " + annee + ", " + prix;
+   }
 
-    public Object[] toArray() {
-        return new Object[]{matricule, marque, model,
-                annee, prix};
-    }
+   public Object[] toArray() {
+      return new Object[]{matricule, marque, model,
+              annee, prix};
+   }
 
     public String[] toSArray() {
         return new String[]{matricule, marque, model,

@@ -1,7 +1,7 @@
 package com.java.ilisi.tp3.location;
 
-import com.java.ilisi.tp3.Client;
-import com.java.ilisi.tp3.Voiture;
+import com.java.ilisi.tp3.model.Client;
+import com.java.ilisi.tp3.model.Voiture;
 
 import java.util.Iterator;
 

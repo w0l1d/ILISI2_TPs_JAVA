@@ -12,6 +12,7 @@ public interface AgenceLabels {
    String LABEL_ADD = "Ajouter";
    String LABEL_UPDATE = "Modifier";
    String LABEL_DELETE = "Supprimer";
+   String LABEL_SEARCH = "Chercher";
    String GESTION_RESERVATION_BTN = "Reservations";
 
    String ERROR_AJOUT_CAR_TITLE = "Error : Ajout de Voiture";

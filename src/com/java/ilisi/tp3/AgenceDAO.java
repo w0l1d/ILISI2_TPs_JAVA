@@ -5,20 +5,23 @@ import com.java.ilisi.tp3.exceptions.CarAlreadyExistsException;
 import com.java.ilisi.tp3.exceptions.VoitureEstLoueeException;
 import com.java.ilisi.tp3.exceptions.VoitureNotFoundException;
 import com.java.ilisi.tp3.location.Location;
+import com.java.ilisi.tp3.location.SerializableSupplier;
+import com.java.ilisi.tp3.model.Client;
+import com.java.ilisi.tp3.model.Voiture;
 
+import java.io.Serializable;
 import java.util.*;
-import java.util.function.Supplier;
 
-public class AgenceDAO extends Location {
+public class AgenceDAO extends Location implements Serializable {
     private final List<Voiture> voitures;
-    private final Supplier<Map<Client, Voiture>> mapSupp;
+    private final SerializableSupplier<Map<Client, Voiture>> mapSupp;
 
-    public AgenceDAO(Supplier<Map<Client, Voiture>> mapSupp, List<Voiture> voitures) {
+    public AgenceDAO(SerializableSupplier<Map<Client, Voiture>> mapSupp, List<Voiture> voitures) {
         this.voitures = new ArrayList<>(voitures);
         this.mapSupp = mapSupp;
     }
 
-    public AgenceDAO(Supplier<Map<Client, Voiture>> mapSupp) {
+    public AgenceDAO(SerializableSupplier<Map<Client, Voiture>> mapSupp) {
         this.voitures = new ArrayList<>();
         this.mapSupp = mapSupp;
     }
@@ -85,6 +88,11 @@ public class AgenceDAO extends Location {
 
     public boolean voitureExistsByMatricule(String matricule) {
         return voitures.stream().anyMatch(v1 -> v1.matricule().equals(matricule));
+    }
+
+    public Voiture findByMatricule(String matricule) {
+        return voitures.stream().filter(v1 -> v1.matricule()
+                .equals(matricule)).findAny().orElse(null);
     }
 
     public Voiture findVoitureByMatricule(String matricule) {
